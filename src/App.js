@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Keywords from './components/Keywords';
+import TopBar from './components/TopBar';
+import keywords from './data/keywords';
 
 function App() {
+
+  const [words, setWords] = useState(keywords);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopBar words={words} setWords={setWords} />
+      <Keywords words={words} />
     </div>
   );
 }
