@@ -12,7 +12,7 @@ function TopBar(props) {
   const [score        , setScore        ] = useState(0);
   const [gameRunning  , setGameRunning  ] = useState(false);
   const [gameFinished , setGameFinished ] = useState(false);
-  const [timeRemaining, setTimeRemaining] = useState(Date.now() + 50000);
+  const [timeRemaining, setTimeRemaining] = useState(Date.now() + 60 * 1000 * 5);
 
   const checkGuess = () => {
     const copy = words.map((e) => {
@@ -101,7 +101,7 @@ function TopBar(props) {
           renderer={customRenderer}
           ref={countdownRef}
           onComplete={() => endGame()}
-          onStart={() => { setTimeRemaining(Date.now() + 50000) }}
+          onStart={() => { setTimeRemaining(Date.now() + 60 * 1000 * 5) }}
         />
       </div>
     </div>
