@@ -44,7 +44,7 @@ The client-side of <b>Java Keywords Challenge</b> was built with React, resultin
 
 <h3 id="technologies-front">🔨 Technologies</h3>
 
-The following techlogies were used to build Java Keywords Challenge's front-end:
+The following technologies were used to build Java Keywords Challenge's front-end:
 <ul>
     <li><a href="https://www.npmjs.com/package/react-icons">React Icons</a></li>
     <li><a href="https://www.npmjs.com/package/react-countdown">React Countdown</a></li>
